@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Qiniu Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        .upload-area {
+            border: 2px dashed #ccc;
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            margin: 20px 0;
+        }
+        input[type="file"] {
+            margin: 20px 0;
+        }
+        button {
+            background: #0070f3;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background: #0051cc;
+        }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        #result {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            white-space: pre-wrap;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        .success {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        .error {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        .loading {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+        }
+        img {
+            max-width: 100%;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🧪 Test Qiniu Upload</h1>
+    <p>Upload an image to test the Qiniu cloud storage integration.</p>
+    
+    <div class="upload-area">
+        <input type="file" id="fileInput" accept="image/*">
+        <br>
+        <button id="uploadBtn" onclick="upload()">Upload to Qiniu</button>
+    </div>
+
+    <div id="result"></div>
+    <div id="imagePreview"></div>
+
+    <script>
+        async function upload() {
+            const fileInput = document.getElementById('fileInput');
+            const resultDiv = document.getElementById('result');
+            const imagePreview = document.getElementById('imagePreview');
+            const uploadBtn = document.getElementById('uploadBtn');
+            
+            const file = fileInput.files[0];
+            if (!file) {
+                resultDiv.className = 'error';
+                resultDiv.textContent = 'Please select a file first!';
+                return;
+            }
+
+            // Show loading state
+            uploadBtn.disabled = true;
+            resultDiv.className = 'loading';
+            resultDiv.textContent = 'Uploading to Qiniu...\n\nFile: ' + file.name + '\nSize: ' + (file.size / 1024).toFixed(2) + ' KB';
+            imagePreview.innerHTML = '';
+
+            try {
+                const formData = new FormData();
+                formData.append('file', file);
+
+                const response = await fetch('http://localhost:3000/api/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    resultDiv.className = 'success';
+                    resultDiv.textContent = '✅ Upload Successful!\n\n' + JSON.stringify(result, null, 2);
+                    
+                    // Show image preview
+                    if (result.url) {
+                        imagePreview.innerHTML = `
+                            <h3>Preview:</h3>
+                            <img src="${result.url}" alt="Uploaded image">
+                            <p>URL: <a href="${result.url}" target="_blank">${result.url}</a></p>
+                        `;
+                    }
+                } else {
+                    resultDiv.className = 'error';
+                    resultDiv.textContent = '❌ Upload Failed!\n\n' + JSON.stringify(result, null, 2);
+                }
+            } catch (error) {
+                resultDiv.className = 'error';
+                resultDiv.textContent = '❌ Error: ' + error.message;
+            } finally {
+                uploadBtn.disabled = false;
+            }
+        }
+
+        // Allow drag and drop
+        const uploadArea = document.querySelector('.upload-area');
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.style.borderColor = '#0070f3';
+        });
+
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.style.borderColor = '#ccc';
+        });
+
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.style.borderColor = '#ccc';
+            
+            const file = e.dataTransfer.files[0];
+            if (file && file.type.startsWith('image/')) {
+                document.getElementById('fileInput').files = e.dataTransfer.files;
+            }
+        });
+    </script>
+</body>
+</html>

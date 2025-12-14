@@ -1,0 +1,12 @@
+{
+  "claudeCode.environmentVariables": [
+    {
+      "name": "HTTP_PROXY",
+      "value": "127.0.0.1:8118"
+    },
+    {
+      "name": "HTTPS_PROXY",
+      "value": "127.0.0.1:8118"
+    }
+  ]
+}

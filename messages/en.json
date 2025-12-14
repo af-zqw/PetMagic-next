@@ -1,0 +1,212 @@
+{
+  "common": {
+    "login": "Login",
+    "logout": "Logout",
+    "credits": "Credits",
+    "generate": "Generate",
+    "download": "Download",
+    "cancel": "Cancel",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "fastGeneration": "Fast Generation",
+    "freeTrial": "Free Trial",
+    "instantGeneration": "Instant Generation",
+    "professionalQuality": "Professional Quality",
+    "securePayment": "Secure Payment"
+  },
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "gallery": "Gallery",
+    "pricing": "Pricing",
+    "imageGenerator": "Image Generator",
+    "videoAnimator": "Video Animator"
+  },
+  "footer": {
+    "description": "Transform your pets into works of art with AI magic. Professional quality, simple operation, making every photo full of creativity and surprise.",
+    "quickLinks": "Quick Links",
+    "links": {
+      "features": "Features",
+      "gallery": "Gallery",
+      "pricing": "Pricing",
+      "help": "Help Center"
+    },
+    "legal": "Legal",
+    "legalLinks": {
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
+      "cookies": "Cookie Policy",
+      "contact": "Contact Us"
+    },
+    "copyright": "All rights reserved."
+  },
+  "home": {
+    "title": "Transform Your Pet Photos Into Magical AI Creations",
+    "tagline": "Make Your Pet a Star",
+    "subtitle": "Create stunning images and videos of your pets as cartoons, babies, or in hilarious costumes - all powered by AI",
+    "ctaPrimary": "Create AI Images",
+    "ctaSecondary": "Create AI Videos",
+    "trust": {
+      "noCard": "No credit card required",
+      "freeTries": "3 free generations daily"
+    },
+    "featuresTitle": "What Can You Create?",
+    "featuresSubtitle": "Powerful AI features to bring your pet photos to life",
+    "featureTags": {
+      "aiPowered": "AI Powered",
+      "highQuality": "High Quality Output",
+      "fastProcessing": "Fast Processing",
+      "multipleStyles": "Multiple Styles",
+      "easyToUse": "Easy to Use",
+      "privacySecure": "Privacy Secure"
+    },
+    "features": {
+      "styles": {
+        "title": "Multiple Art Styles",
+        "description": "Transform pets into cartoons, 3D animations, oil paintings, or anime characters"
+      },
+      "age": {
+        "title": "Age Transformation",
+        "description": "See your adult pet as an adorable puppy or kitten again with our AI time machine"
+      },
+      "characters": {
+        "title": "Fun Characters & Roles",
+        "description": "Dress up pets as police officers, teachers, superheroes, or even gangster bosses"
+      }
+    },
+    "galleryTitle": "Created by Pet Lovers Like You",
+    "gallerySubtitle": "See the amazing creations from other pet owners",
+    "galleryMore": "More amazing styles waiting for you to explore",
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Quick answers to help you understand our service",
+      "q1": {
+        "question": "How do I use AI Pet Live?",
+        "answer": "Simply upload a clear photo of your pet, choose between image or video mode, select a style (like baby, police, or cartoon), optionally add a text description, and click Generate. Your AI creation will be ready in seconds!"
+      },
+      "q2": {
+        "question": "What types of pets work best?",
+        "answer": "AI Pet Live works best with dogs and cats, but can also create amazing results for rabbits, birds, hamsters, and other pets. Just make sure the photo shows your pet's face clearly."
+      },
+      "q3": {
+        "question": "How long does generation take?",
+        "answer": "Images typically generate in 5-10 seconds, while videos take 30-60 seconds depending on the duration you choose (3-10 seconds)."
+      },
+      "q4": {
+        "question": "Can I use the generated content commercially?",
+        "answer": "Yes! All content you create is yours to use however you like, including for commercial purposes and social media."
+      }
+    },
+    "bottomCTA": {
+      "title": "Ready to see your pet's magical transformation?",
+      "subtitle": "Start now and let AI create unique artwork for your pet",
+      "button": "Start Creating Now"
+    }
+  },
+  "login": {
+    "title": "Welcome to AI Pet Live",
+    "subtitle": "Login to start creating",
+    "username": "Username",
+    "password": "Password",
+    "usernamePlaceholder": "Enter username",
+    "passwordPlaceholder": "Enter password",
+    "loginButton": "Login",
+    "welcome": "Welcome to AI Pet Live!",
+    "errors": {
+      "invalid": "Invalid credentials",
+      "required": "This field is required"
+    }
+  },
+  "create": {
+    "tabs": {
+      "image": "Image Generator",
+      "video": "Video Animator"
+    },
+    "upload": {
+      "title": "Upload Your Pet Photo",
+      "dropzone": "Drag & drop or click to upload",
+      "hint": "Clear photo with pet's face visible",
+      "limit": "JPG/PNG, max 10MB",
+      "friendlyPrompt": "Upload your adorable pet photo",
+      "replaceHint": "Click or drag to replace image",
+      "examples": "Try these examples:"
+    },
+    "style": {
+      "title": "Choose a Style",
+      "baby": "Baby Version",
+      "cartoon": "Cartoon Style",
+      "police": "Police Officer",
+      "teacher": "Teacher",
+      "gangster": "Gangster Boss",
+      "superhero": "Superhero",
+      "anime": "Healing Anime",
+      "cyberpunk": "Cyberpunk",
+      "pixel-art": "Pixel Art",
+      "custom": "Custom"
+    },
+    "prompt": {
+      "title": "Describe the Scene (Optional)",
+      "placeholder": "e.g., wearing sunglasses, sitting on a beach...",
+      "tags": {
+        "wearingsunglasses": "Wearing sunglasses",
+        "smilinghappily": "Smiling happily",
+        "runninginpark": "Running in park",
+        "sleepingpeacefully": "Sleeping peacefully",
+        "playingwithball": "Playing with ball"
+      }
+    },
+    "action": {
+      "title": "Describe the Action (Optional)",
+      "tags": {
+        "walkingslowly": "Walking slowly",
+        "runningfast": "Running fast",
+        "waggingtail": "Wagging tail",
+        "jumpingup": "Jumping up",
+        "turninghead": "Turning head",
+        "blinkingeyes": "Blinking eyes"
+      }
+    },
+    "duration": {
+      "title": "Video Duration",
+      "unit": "seconds",
+      "hint": "3-10 seconds allowed",
+      "max": "Maximum duration is 10 seconds"
+    },
+    "generate": {
+      "imageButton": "Generate Image ({credits} Credits)",
+      "videoButton": "Generate Video ({credits} Credits)",
+      "generating": "Generating your magical pet {type}...",
+      "generatingVideo": "Creating your pet video... This may take 30-60 seconds",
+      "complete": "Generation complete!",
+      "insufficientCredits": "Insufficient credits. Please recharge."
+    },
+    "results": {
+      "title": "Your AI Creations",
+      "empty": "Your generated {type}s will appear here",
+      "download": "Download"
+    }
+  },
+  "errors": {
+    "fileType": "Invalid file type. Please upload JPG or PNG.",
+    "fileSize": "File too large. Maximum size is 10MB.",
+    "uploadFailed": "Upload failed. Please try again.",
+    "generationFailed": "Generation failed. Please try again.",
+    "networkError": "Network error. Please check your connection."
+  },
+  "meta": {
+    "home": {
+      "title": "PetMagic AI - Transform Pet Photos into AI Art & Videos | Free Pet Image Generator",
+      "description": "Turn your pet photos into amazing AI-generated images and videos. Create cartoon pets, baby versions, or funny characters in seconds. Try free!"
+    },
+    "imageGenerator": {
+      "title": "AI Pet Image Generator - Create Cartoon & Stylized Pet Photos | PetMagic AI",
+      "description": "Generate stunning AI pet images from photos. Transform dogs and cats into cartoons, baby versions, or fun characters."
+    },
+    "videoAnimator": {
+      "title": "AI Pet Video Animator - Bring Pet Photos to Life | PetMagic AI",
+      "description": "Animate pet photos with AI. Create 3-10 second videos of your pets in different styles and actions."
+    }
+  }
+}

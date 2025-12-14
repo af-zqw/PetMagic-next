@@ -1,0 +1,212 @@
+{
+  "common": {
+    "login": "登录",
+    "logout": "登出",
+    "credits": "积分",
+    "generate": "生成",
+    "download": "下载",
+    "cancel": "取消",
+    "close": "关闭",
+    "loading": "加载中...",
+    "error": "错误",
+    "success": "成功",
+    "fastGeneration": "快速生成",
+    "freeTrial": "免费试用",
+    "instantGeneration": "即时生成",
+    "professionalQuality": "专业品质",
+    "securePayment": "安全支付"
+  },
+  "nav": {
+    "home": "首页",
+    "features": "功能",
+    "gallery": "画廊",
+    "pricing": "价格",
+    "imageGenerator": "图片生成器",
+    "videoAnimator": "视频动画器"
+  },
+  "footer": {
+    "description": "用 AI 魔法让你的宠物成为艺术作品。专业品质，简单操作，让每一张照片都充满创意和惊喜。",
+    "quickLinks": "快速链接",
+    "links": {
+      "features": "功能介绍",
+      "gallery": "作品展示",
+      "pricing": "定价方案",
+      "help": "帮助中心"
+    },
+    "legal": "法律信息",
+    "legalLinks": {
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "cookies": "Cookie 政策",
+      "contact": "联系我们"
+    },
+    "copyright": "保留所有权利。"
+  },
+  "home": {
+    "title": "将宠物照片变成神奇的AI创作",
+    "tagline": "让你的宠物成为明星",
+    "subtitle": "用AI创建宠物的卡通形象、幼年版本或搞笑装扮的精美图片和视频",
+    "ctaPrimary": "创建AI图片",
+    "ctaSecondary": "创建AI视频",
+    "trust": {
+      "noCard": "无需信用卡",
+      "freeTries": "每日3次免费生成"
+    },
+    "featuresTitle": "你能创造什么？",
+    "featuresSubtitle": "强大的 AI 功能，让你的宠物照片焕发新生",
+    "featureTags": {
+      "aiPowered": "AI 驱动",
+      "highQuality": "高质量输出",
+      "fastProcessing": "快速处理",
+      "multipleStyles": "多种风格",
+      "easyToUse": "简单易用",
+      "privacySecure": "隐私安全"
+    },
+    "features": {
+      "styles": {
+        "title": "多种艺术风格",
+        "description": "将宠物变成卡通、3D动画、油画或动漫角色"
+      },
+      "age": {
+        "title": "年龄变换",
+        "description": "用AI时光机看看成年宠物变回可爱幼崽的样子"
+      },
+      "characters": {
+        "title": "趣味角色扮演",
+        "description": "让宠物扮演警察、老师、超级英雄甚至黑帮老大"
+      }
+    },
+    "galleryTitle": "来自宠物爱好者的创作",
+    "gallerySubtitle": "看看其他宠物主人创造的精彩作品",
+    "galleryMore": "还有更多精彩风格等你探索",
+    "faq": {
+      "title": "常见问题",
+      "subtitle": "常见问题解答，帮你快速了解我们的服务",
+      "q1": {
+        "question": "如何使用AI Pet Live？",
+        "answer": "只需上传清晰的宠物照片，选择图片或视频模式，选择风格（如幼年、警察或卡通），可选添加文字描述，点击生成。几秒钟内就能得到AI创作！"
+      },
+      "q2": {
+        "question": "哪些宠物效果最好？",
+        "answer": "AI Pet Live 对猫狗效果最好，但也能为兔子、鸟类、仓鼠等其他宠物创建惊艳效果。只需确保照片清晰显示宠物面部。"
+      },
+      "q3": {
+        "question": "生成需要多长时间？",
+        "answer": "图片通常需要5-10秒生成，视频需要30-60秒，取决于你选择的时长（3-10秒）。"
+      },
+      "q4": {
+        "question": "生成的内容可以商用吗？",
+        "answer": "可以！你创建的所有内容都归你所有，可以任意使用，包括商业用途和社交媒体。"
+      }
+    },
+    "bottomCTA": {
+      "title": "准备好看看宠物的神奇变身了吗？",
+      "subtitle": "立即开始，让 AI 为你的宠物创造独一无二的艺术作品",
+      "button": "立即开始创作"
+    }
+  },
+  "login": {
+    "title": "欢迎来到 AI Pet Live",
+    "subtitle": "登录开始创作",
+    "username": "用户名",
+    "password": "密码",
+    "usernamePlaceholder": "输入用户名",
+    "passwordPlaceholder": "输入密码",
+    "loginButton": "登录",
+    "welcome": "欢迎使用 AI Pet Live！",
+    "errors": {
+      "invalid": "账号或密码错误",
+      "required": "此字段为必填项"
+    }
+  },
+  "create": {
+    "tabs": {
+      "image": "图片生成器",
+      "video": "视频动画器"
+    },
+    "upload": {
+      "title": "上传宠物照片",
+      "dropzone": "拖拽或点击上传",
+      "hint": "需要清晰显示宠物面部",
+      "limit": "JPG/PNG，最大10MB",
+      "friendlyPrompt": "上传你可爱的宠物照片吧",
+      "replaceHint": "点击或拖拽替换图片",
+      "examples": "试试这些示例："
+    },
+    "style": {
+      "title": "选择风格",
+      "baby": "幼年版",
+      "cartoon": "卡通风格",
+      "police": "警察",
+      "teacher": "老师",
+      "gangster": "黑帮老大",
+      "superhero": "超级英雄",
+      "anime": "吉卜力/治愈动漫",
+      "cyberpunk": "赛博朋克",
+      "pixel-art": "像素艺术",
+      "custom": "自定义"
+    },
+    "prompt": {
+      "title": "描述场景（可选）",
+      "placeholder": "例如：戴墨镜，坐在沙滩上...",
+      "tags": {
+        "wearingsunglasses": "戴墨镜",
+        "smilinghappily": "开心微笑",
+        "runninginpark": "公园奔跑",
+        "sleepingpeacefully": "安静睡觉",
+        "playingwithball": "玩球"
+      }
+    },
+    "action": {
+      "title": "描述动作（可选）",
+      "tags": {
+        "walkingslowly": "缓慢行走",
+        "runningfast": "快速奔跑",
+        "waggingtail": "摇尾巴",
+        "jumpingup": "跳跃",
+        "turninghead": "转头",
+        "blinkingeyes": "眨眼睛"
+      }
+    },
+    "duration": {
+      "title": "视频时长",
+      "unit": "秒",
+      "hint": "允许3-10秒",
+      "max": "最大时长为10秒"
+    },
+    "generate": {
+      "imageButton": "生成图片（{credits}积分）",
+      "videoButton": "生成视频（{credits}积分）",
+      "generating": "正在生成你的魔法宠物{type}...",
+      "generatingVideo": "创建视频中...可能需要30-60秒",
+      "complete": "生成完成！",
+      "insufficientCredits": "积分不足，请充值"
+    },
+    "results": {
+      "title": "你的AI创作",
+      "empty": "生成的{type}将显示在这里",
+      "download": "下载"
+    }
+  },
+  "errors": {
+    "fileType": "无效的文件类型。请上传JPG或PNG。",
+    "fileSize": "文件过大。最大10MB。",
+    "uploadFailed": "上传失败。请重试。",
+    "generationFailed": "生成失败。请重试。",
+    "networkError": "网络错误。请检查连接。"
+  },
+  "meta": {
+    "home": {
+      "title": "PetMagic AI - 将宠物照片变成AI艺术和视频 | 免费宠物图片生成器",
+      "description": "将宠物照片变成惊人的AI生成图片和视频。几秒钟创建卡通宠物、幼年版本或有趣角色。免费试用！"
+    },
+    "imageGenerator": {
+      "title": "AI宠物图片生成器 - 创建卡通和风格化宠物照片 | PetMagic AI",
+      "description": "从照片生成精美的AI宠物图片。将狗和猫变成卡通、幼年版本或有趣角色。"
+    },
+    "videoAnimator": {
+      "title": "AI宠物视频动画器 - 让宠物照片动起来 | PetMagic AI",
+      "description": "用AI动画化宠物照片。创建3-10秒的宠物视频，不同风格和动作。"
+    }
+  }
+}
